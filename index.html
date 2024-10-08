@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="projects">
+        <div class="projects__project projects__project--1">
+          <div class="projects__content-box">
+            <h2 class="projects__content-box-heading">Completed projects</h2>
+            <p class="projects__content-box-par">
+              Only a small part of the work performed by our company is
+              presented on the site. For 14 years on in the construction <br />
+              market we have made happy more than 1000 families
+            </p>
+            <div class="projects__details">
+              <div class="projects__details-item">
+                <h3>City:</h3>
+                <p>Rostov-on-Don LCD admiral</p>
+              </div>
+              <div class="projects__details-item">
+                <h3>Apartment area:</h3>
+                <p>81 m2</p>
+              </div>
+              <div class="projects__details-item">
+                <h3>Repair time:</h3>
+                <p>3.5 months</p>
+              </div>
+              <div class="projects__details-item">
+                <h3>Repair cost:</h3>
+                <p>Upon request</p>
+              </div>
+            </div>
+          </div>
+          <div class="projects__image-box">
+            <ul aria-label="list of locations" class="projects__list">
+              <li class="projects__list-item" data-tab="1">
+                Rostov-on-Don, Admiral
+              </li>
+              <li class="projects__list-item" data-tab="2">Sochi Thieves</li>
+              <li class="projects__list-item" data-tab="3">
+                Rostov-on-Don Patriotic
+              </li>
+            </ul>
+            <div class="projects__img">
+              <img
+                aria-hidden="true"
+                src="img/img-1.png"
+                alt="image of design"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="projects__project projects__project--2">
+          <div class="projects__content-box">
+            <h2 class="projects__content-box-heading">Completed projects</h2>
+            <p class="projects__content-box-par">
+              Only a small part of the work performed by our company is
+              presented on the site. For 14 years on in the construction <br />
+              market we have made happy more than 1000 families
+            </p>
+            <div class="projects__details">
+              <div class="projects__details-item">
+                <h3>City:</h3>
+                <p>Sochi Thieves</p>
+              </div>
+              <div class="projects__details-item">
+                <h3>Apartment area:</h3>
+                <p>105 m2</p>
+              </div>
+              <div class="projects__details-item">
+                <h3>Repair time:</h3>
+                <p>5 months</p>
+              </div>
+              <div class="projects__details-item">
+                <h3>Repair cost:</h3>
+                <p>Upon request</p>
+              </div>
+            </div>
+          </div>
+          <div class="projects__image-box">
+            <ul aria-label="list of locations" class="projects__list">
+              <li class="projects__list-item" data-tab="1">
+                Rostov-on-Don, Admiral
+              </li>
+              <li class="projects__list-item" data-tab="2">Sochi Thieves</li>
+              <li class="projects__list-item" data-tab="3">
+                Rostov-on-Don Patriotic
+              </li>
+            </ul>
+            <div class="projects__img">
+              <img
+                aria-hidden="true"
+                src="img/img-2.png"
+                alt="image of design"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="projects__project projects__project--3">
+          <div class="projects__content-box">
+            <h2 class="projects__content-box-heading">Completed projects</h2>
+            <p class="projects__content-box-par">
+              Only a small part of the work performed by our company is
+              presented on the site. For 14 years on in the construction <br />
+              market we have made happy more than 1000 families
+            </p>
+            <div class="projects__details">
+              <div class="projects__details-item">
+                <h3>City:</h3>
+                <p>Rostov-on-Don LCD admiral</p>
+              </div>
+              <div class="projects__details-item">
+                <h3>Apartment area:</h3>
+                <p>103 m2</p>
+              </div>
+              <div class="projects__details-item">
+                <h3>Repair time:</h3>
+                <p>3.5 months</p>
+              </div>
+              <div class="projects__details-item">
+                <h3>Repair cost:</h3>
+                <p>Upon request</p>
+              </div>
+            </div>
+          </div>
+          <div class="projects__image-box">
+            <ul aria-label="list of locations" class="projects__list">
+              <li class="projects__list-item" data-tab="1">
+                Rostov-on-Don, Admiral
+              </li>
+              <li class="projects__list-item" data-tab="2">Sochi Thieves</li>
+              <li class="projects__list-item" data-tab="3">
+                Rostov-on-Don Patriotic
+              </li>
+            </ul>
+            <div class="projects__img">
+              <img
+                aria-hidden="true"
+                src="img/img-3.png"
+                alt="image of design"
+              />
+            </div>
+          </div>
+        </div>
+        <div aria-hidden="true" class="projects__pagination">
+          <!--Left Button Icon-->
+          <svg
+            width="42"
+            height="14"
+            class="projects__pagination-icon projects__pagination-icon-left"
+          >
+            <use xlink:href="icons/sprite-design.svg#left-arrow"></use>
+          </svg>
+
+          <!--Dots-->
+          <ul class="projects__pagination-items">
+            <li
+              class="projects__pagination-item projects__pagination-item--active"
+            ></li>
+            <li class="projects__pagination-item"></li>
+            <li class="projects__pagination-item"></li>
+          </ul>
+
+          <!--Right Button Icon-->
+          <svg
+            width="42"
+            height="14"
+            class="projects__pagination-icon projects__pagination-icon-right"
+          >
+            <use xlink:href="icons/sprite-design.svg#right-arrow"></use>
+          </svg>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

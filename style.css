@@ -1,0 +1,303 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 93.75em) {
+  html {
+    font-size: 70%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 52.5%;
+  }
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Nunito Sans", "Yeseva One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+body p {
+  margin: 0;
+}
+
+.projects {
+  padding: 10.7rem 13.445rem 10.7rem;
+  background-color: #131313;
+  position: relative;
+}
+@media only screen and (max-width: 81.25em) {
+  .projects {
+    padding: 10.7rem 10.445rem 10.7rem;
+    margin-bottom: 85rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .projects {
+    padding: 10.7rem 6.445rem 10.7rem;
+    position: relative;
+    margin-bottom: 15rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .projects {
+    padding: 10.7rem 2.445rem 10.7rem;
+  }
+}
+
+.projects__project--1 {
+  display: flex;
+}
+.projects__project--2 {
+  display: none;
+}
+.projects__project--3 {
+  display: none;
+}
+
+@media only screen and (min-width: 93.75em) {
+  .projects__project {
+    gap: 4rem;
+  }
+}
+@media only screen and (max-width: 81.25em) {
+  .projects__project {
+    flex-direction: column-reverse;
+    gap: 2.4rem;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  .projects__project {
+    margin-bottom: 10rem;
+  }
+}
+.projects__content-box {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.4rem;
+  flex-basis: 60%;
+}
+@media only screen and (max-width: 81.25em) {
+  .projects__content-box {
+    align-self: flex-start;
+  }
+}
+.projects__content-box-heading {
+  width: 48%;
+  font-family: "Yeseva One";
+  font-size: 2.7rem;
+  font-weight: 400;
+  line-height: 139%;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+  color: #e3b873;
+}
+@media only screen and (max-width: 50em) {
+  .projects__content-box-heading {
+    display: none;
+  }
+}
+.projects__content-box-par {
+  font-size: 1.4rem;
+  line-height: 191%;
+  color: #fff;
+}
+@media only screen and (max-width: 50em) {
+  .projects__content-box-par {
+    display: none;
+  }
+}
+.projects__details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.4rem;
+}
+.projects__details-item {
+  flex-basis: 45%;
+}
+.projects__details-item:nth-of-type(2),
+.projects__details-item:nth-of-type(4) {
+  margin-left: -5rem;
+}
+.projects__details-item h3 {
+  margin-bottom: 0.9rem;
+  font-family: "Yeseva One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+  color: #e3b873;
+}
+.projects__details-item p {
+  font-size: 1.3rem;
+  line-height: 164%;
+  width: 50%;
+  color: #fff;
+}
+@media only screen and (max-width: 37.5em) {
+  .projects__details-item p {
+    width: 60%;
+  }
+}
+.projects__list {
+  display: flex;
+  gap: 6.05rem;
+  list-style: none;
+  margin-bottom: 4.53rem;
+}
+@media only screen and (max-width: 50em) {
+  .projects__list {
+    display: none;
+  }
+}
+.projects__list-item {
+  font-family: "Yeseva One";
+  font-size: 1.4rem;
+  line-height: 139%;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  padding-bottom: 6px;
+  border-bottom: 1px solid transparent;
+}
+.projects__list-item:hover,
+.projects__list-item:active {
+  color: #e3b873;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e3b873;
+  transition: all 0.2s;
+}
+
+.projects__list-item--active {
+  color: #e3b873;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e3b873;
+  transition: all 0.2s;
+}
+
+.projects__image-box {
+  flex-basis: 95%;
+}
+.projects__img {
+  position: relative;
+}
+.projects__img-inf {
+  display: none;
+}
+.projects__img-inf h2 {
+  width: 48%;
+  font-family: "Yeseva One";
+  font-size: 2.7rem;
+  font-weight: 400;
+  line-height: 139%;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+  color: #e3b873;
+  text-align: center;
+}
+.projects__img-inf p {
+  font-size: 1.4rem;
+  line-height: 191%;
+  color: #fff;
+  width: 90%;
+  text-align: center;
+}
+@media only screen and (max-width: 37.5em) {
+  .projects__img-inf p {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 50em) {
+  .projects__img-inf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+}
+.projects__img img {
+  width: 100%;
+}
+.projects__img span {
+  display: none;
+}
+@media only screen and (max-width: 50em) {
+  .projects__img span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3b873;
+    border-radius: 50%;
+    width: 4.6rem;
+    height: 4.6rem;
+    position: absolute;
+  }
+  .projects__img span:first-of-type {
+    bottom: 50%;
+    left: 4%;
+  }
+  .projects__img span:last-of-type {
+    bottom: 50%;
+    right: 4%;
+  }
+  .projects__img span img {
+    width: auto;
+  }
+}
+.projects__pagination {
+  position: absolute;
+  bottom: 15%;
+  margin-top: calc(7.64rem - 3.4rem);
+  display: flex;
+  gap: 2.95rem;
+}
+@media only screen and (max-width: 81.5em) {
+  .projects__pagination {
+    bottom: 5%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .projects__pagination {
+    bottom: 10%;
+  }
+}
+.projects__pagination-items {
+  list-style: none;
+  display: flex;
+  gap: 1.754rem;
+  cursor: pointer;
+}
+.projects__pagination-item {
+  border-radius: 3rem;
+  width: 9px;
+  height: 9px;
+  background: rgba(255, 255, 255, 0.3);
+  transition: all 0.2s;
+}
+.projects__pagination-item:hover,
+.projects__pagination-item:active {
+  background: #fff;
+}
+
+.projects__pagination-item--active {
+  background: #fff;
+}
+.projects__pagination-icon {
+  cursor: pointer;
+}
